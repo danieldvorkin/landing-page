@@ -53,10 +53,10 @@
 		margin-top:20px;
 		padding: 5px 30px;
 	}
+	.testimonial {
+		margin: 0 10em;
+	}
+	.carousel-cell {
+		width:100%;
+	}
 }
-
-
-
-
-
-@media screen
