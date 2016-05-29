@@ -9,11 +9,54 @@
 	display:inline-flex;
 }
 
-.container-fluid {
-	margin: 0 2em;
+@media (min-width:700px) { 
+	.container-fluid {
+		margin: 0 2em;
+	}
+
+	#get-trial-btn {
+		padding-top:8px;
+		padding-right:30px;
+	}
+
+	.graph-container {
+		height:500px;
+	}
+
+	.action {
+		border-top: 1px solid silver;
+		border-bottom: 1px solid silver;
+	}
+	.action-container {
+		margin:0 19em;
+		height:200px;
+		text-align:center;
+	}
+
+	.header-section {
+		text-align:center;
+	}
+
+	.header-section h2 {
+		font-weight:300;
+	}
+
+	.header-section p {
+		margin: 0px 30em;
+	}
+
+	.text-body {
+		margin-top:10%;
+	}
+
+	.buy-now {
+		margin-top:20px;
+		padding: 5px 30px;
+	}
 }
 
-#get-trial-btn {
-	padding-top:8px;
-	padding-right:30px;
-}
+
+
+
+
+@media screen
