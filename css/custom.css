@@ -75,7 +75,11 @@ body {
 	}
 
 	.header-section p {
-		margin: 0px 30em;
+		margin: 0px 25em;
+	}
+
+	.graph-container canvas, .graph-container .range-slider {
+		margin: 0 20em;
 	}
 
 	.text-body {
@@ -156,20 +160,29 @@ body {
 	}
 
 	.footer-container {
-		margin:0 30em;
 		padding:25px;
+		margin:0 18em;
 	}
 	.footer img {
 		opacity: 0.4;
 	}
-	.footer-list {
-		display:inline-flex;
+	.footer-container table {
+		width:100%;
 	}
-	.footer-list p {
-		padding:15px 50px;
+	.footer-table img{
+		float:left;
+	}
+	.footer-table td a{
+		text-decoration: none;
+		color:black;
+	}
+	.footer-table td {
+		text-align:center;
+	}
+	.footer-table p {
+		text-align:right;
 	}
 }
-
 
 .range-slider {
     height: 10px;
