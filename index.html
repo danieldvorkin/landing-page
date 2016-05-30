@@ -9,9 +9,10 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.css">
     <link rel="stylehseet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.5.1/nouislider.min.css">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -52,7 +53,7 @@
             <p>We push ourselves to new levels of inspired excellence with each project and we sweat creativity.</p>
           </div>
         </div>
-        <canvas id="myChart"></canvas>
+        <canvas id="ini" width="500" height="300"></canvas>
       </div>
     </section>
 
@@ -108,12 +109,14 @@
         <div class="im-centered">
           <div class="row">
             <div class="col-lg-4 item">
-              <h4>Personal</h4>
-              <p>Just started using awesome Module. Great way to boost the hard designing or prototyping process.</p>
+              <div class="content">
+                <h2>Personal</h2>
+                <p>Just started using awesome Module. Great way to boost the hard designing or prototyping process.</p>
+              </div>
               <hr/>
               <div class="row">
                 <div class="col-lg-4">
-                  <h3>Free</h3>
+                  <h1 id="free-label">Free</h1>
                 </div>
                 <div class="col-lg-8">
                   <p>Per month billed annualy or $250 from month to month</p>
@@ -122,12 +125,14 @@
               <button class="btn btn-success" href="#">Get It</button>
             </div>
             <div class="col-lg-4 item">
-              <h4>Personal</h4>
-              <p>Just started using awesome Module. Great way to boost the hard designing or prototyping process.</p>
+              <div class="content">
+                <h2>Agency</h2>
+                <p>Also a perfect tool for creative studios and freelancers”</p>
+              </div>
               <hr/>
               <div class="row">
                 <div class="col-lg-4">
-                  <h3>Free</h3>
+                  <h2 class="regular-label">$123</h2>
                 </div>
                 <div class="col-lg-8">
                   <p>Per month billed annualy or $250 from month to month</p>
@@ -136,12 +141,14 @@
               <button class="btn btn-success" href="#">Buy It</button>
             </div>
             <div class="col-lg-4 item">
-              <h4>Personal</h4>
-              <p>Just started using awesome Module. Great way to boost the hard designing or prototyping process.</p>
+              <div class="content">
+                <h2>Personal</h2>
+                <p>Just started using awesome Module. Great way to boost the hard designing or prototyping process.</p>
+              </div>
               <hr/>
               <div class="row">
                 <div class="col-lg-4">
-                  <h3>Free</h3>
+                  <h2 class="regular-label">$312</h2>
                 </div>
                 <div class="col-lg-8">
                   <p>Per month billed annualy or $250 from month to month</p>
@@ -185,7 +192,10 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.js"></script>
-    <script src="custom.js"></script>
+    <script src="js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.5.1/nouislider.js"></script>
+    <script src="js/RangeSlider-all.min.js"></script>
+    <script src="js/RangeSlider-core.js"></script>
   </body>
 </html>
