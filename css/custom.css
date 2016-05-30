@@ -161,26 +161,20 @@ body {
 
 	.footer-container {
 		padding:25px;
-		margin:0 18em;
 	}
 	.footer img {
 		opacity: 0.4;
 	}
-	.footer-container table {
-		width:100%;
+	.outer-container {
+		margin: 0 9em;
 	}
-	.footer-table img{
-		float:left;
+
+	.inner-container {
+		margin-left: 15em;
 	}
-	.footer-table td a{
-		text-decoration: none;
-		color:black;
-	}
-	.footer-table td {
-		text-align:center;
-	}
-	.footer-table p {
-		text-align:right;
+
+	.inner-container a {
+		margin-right:25px;
 	}
 }
 
