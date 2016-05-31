@@ -22,10 +22,10 @@ body {
 	background: #86939E;
 }
 .sub.empty {
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
 }
 
 #free-label {
@@ -46,6 +46,49 @@ body {
 
 .testimonial h3 {
 	font-weight:200;
+}
+
+.ribbon {
+   position: absolute;
+   right: -5px; top: -5px;
+   z-index: 1;
+   overflow: hidden;
+   width: 75px; height: 75px; 
+   text-align: right;
+}
+.ribbon span {
+   font-size: 10px;
+   color: #fff; 
+   text-transform: uppercase; 
+   text-align: center;
+   font-weight: bold; line-height: 20px;
+   transform: rotate(45deg);
+   width: 100px; display: block;
+   background: #79A70A;
+   background: linear-gradient(#0DB8C9 10%, #0DB8C9 100%);
+   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+   position: absolute;
+   top: 19px; right: -21px;
+}
+.ribbon span::before {
+   content: '';
+   position: absolute; 
+   left: 0px; top: 100%;
+   z-index: -1;
+   border-left: 3px solid #79A70A;
+   border-right: 3px solid transparent;
+   border-bottom: 3px solid transparent;
+   border-top: 3px solid #79A70A;
+}
+.ribbon span::after {
+   content: '';
+   position: absolute; 
+   right: 0%; top: 100%;
+   z-index: -1;
+   border-right: 3px solid #79A70A;
+   border-left: 3px solid transparent;
+   border-bottom: 3px solid transparent;
+   border-top: 3px solid #79A70A;
 }
 
 @media (max-width:400px) {
@@ -130,6 +173,35 @@ body {
 
 	.regular-label {
 		margin-top:5px;
+	}
+	.join-us-container {
+		margin: 0 2.5em;
+		text-align:center;
+	}
+	.join-us .input-group {
+		width:100%;
+		display:inline-flex;
+		margin-bottom:20px;
+	}
+	.join-us .input-group button {
+		right:2px;
+		position: relative
+	}
+
+	.footer {
+		display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+	}
+
+	.footer-container {
+		margin-top:15px;
+	}
+
+	.footer img {
+		float:none !important;
 	}
 }
 
@@ -268,7 +340,7 @@ body {
 
 	#basic-addon1 {
 		height: 34px;
-    left: -5px;
+    left: -2px;
     position: relative;
 	}
 	.input-group {
