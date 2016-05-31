@@ -40,6 +40,48 @@ body {
 	font-weight:200;
 }
 
+.range-slider {
+	max-width:500px;
+}
+
+.testimonial h3 {
+	font-weight:200;
+}
+
+@media (max-width:400px) {
+	.navbar-collapse {
+		text-align:center;
+	}
+	.graph-container {
+		margin: 0 3em;
+		text-align:center;
+	}
+
+	#ini, .range-slider {
+		max-width:100%;
+	}
+
+	.action-container {
+		text-align:center;
+		margin:0 3em;
+		margin-bottom:100px
+	}
+
+	.action-container h3 {
+		font-size:18px;
+	}
+	.flickity-slider {
+		text-align:center;
+	}
+	 .flickity-viewport{
+		height:380px !important;
+	}
+	.flickity-prev-next-button {
+		top:25% !important;
+	}
+}
+
+
 @media (min-width:700px) { 
 	.container-fluid {
 		margin: 0 2em;
@@ -94,6 +136,11 @@ body {
 	.testimonial {
 		margin: 0 10em;
 	}
+
+	.carousel-container {
+		margin:0 15em;
+	}
+
 	.carousel-cell {
 		width:100%;
 	}
