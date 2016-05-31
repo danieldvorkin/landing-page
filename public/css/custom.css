@@ -79,6 +79,58 @@ body {
 	.flickity-prev-next-button {
 		top:25% !important;
 	}
+
+	.license-container {
+		margin:0 2.5em;
+	}
+
+	.item {
+		border: 1px solid silver;
+    border-radius: 25px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 20px;
+    margin-bottom:30px;
+	}
+
+
+	.item::after {
+		box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+		transition: opacity 0.3s ease-in-out;
+	}
+
+	.item:hover {
+	  transform: scale(1.1, 1.1);
+	  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+	}
+
+	.item:hover::after {
+	  opacity: 1;
+	}
+
+	.item button {
+		width:100%;
+		margin-bottom:15px;
+	}
+
+	.content {
+		padding:20px;	
+		text-align:center;
+		height:200px;
+	}
+
+	#license-title {
+		text-align:center;
+		width:100%;
+	}
+
+	#free-label {
+		margin-top:0px;
+	}
+
+	.regular-label {
+		margin-top:5px;
+	}
 }
 
 
