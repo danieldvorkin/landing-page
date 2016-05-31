@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>M</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.css">
+    <link rel="stylehseet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.5.1/nouislider.min.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default new-navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo.svg"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="get-trial-btn" href="#">Get Free Trial</a></li>
+            <li><button class="btn btn-default">Buy Now</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Graph Section -->
+    <section class="graph">
+      <div class="graph-container">
+        <div class="row">
+          <div class="col-lg-12 header-section">
+            <h2>Share your Files with Ease</h2>
+            <p>We push ourselves to new levels of inspired excellence with each project and we sweat creativity.</p>
+            <button class="btn btn-default">Buy Now | $26</button><br>
+            <canvas id="ini" width="500" height="300"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section class="action">
+      <div class="action-container">
+        <div class="row text-body">
+          <div class="col-lg-12">
+            <h3>We push ourselves to new levels of inspired excellence with each project and we sweat creativity. You won’t see anything until we’re done drooling at the result.</h3>
+            <button class="btn btn-success buy-now">Buy Now for <br/>$23</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel">
+      <div class="carousel-container">
+        <div class="carousel js-flickity">
+          <div class="carousel-cell">
+            <div class="row testimonial">
+              <div class="col-lg-3">
+                <img src="images/testimonial1.svg"/>
+              </div>
+              <div class="col-lg-9">
+                <h3>“Just started using awesome Module. Great way to boost the hard designing or prototyping process. Also a perfect tool for creative studios and freelancers”</h3>
+                <h6>Irina Bykova</h6>
+                <p>Photographer, works with Slack team</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="row testimonial">
+              <div class="col-lg-3">
+                <img src="images/testimonial1.svg"/>
+              </div>
+              <div class="col-lg-9">
+                <h3>“Just started using awesome Module. Great way to boost the hard designing or prototyping process. Also a perfect tool for creative studios and freelancers”</h3>
+                <h6>Irina Bykova</h6>
+                <p>Photographer, works with Slack team</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- License Section -->
+    <section class="license">
+      <div class="license-container">
+        <h2 id="license-title">Choose Your License</h2>
+        <br>
+        <div class="im-centered">
+          <div class="row">
+            <div class="col-lg-4 item">
+              <div class="content">
+                <h2>Personal</h2>
+                <p>Just started using awesome Module. Great way to boost the hard designing or prototyping process.</p>
+              </div>
+              <hr/>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h1 id="free-label">Free</h1>
+                </div>
+                <div class="col-lg-8">
+                  <p>Per month billed annualy or $250 from month to month</p>
+                </div>
+              </div>
+              <button class="btn btn-success" href="#">Get It</button>
+            </div>
+            <div class="col-lg-4 item">
+              <div class="content">
+                <h2>Agency</h2>
+                <p>Also a perfect tool for creative studios and freelancers”</p>
+              </div>
+              <hr/>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h2 class="regular-label">$123</h2>
+                </div>
+                <div class="col-lg-8">
+                  <p>Per month billed annualy or $250 from month to month</p>
+                </div>
+              </div>
+              <button class="btn btn-success" href="#">Buy It</button>
+            </div>
+            <div class="col-lg-4 item">
+              <div class="content">
+                <h2>Personal</h2>
+                <p>Just started using awesome Module. Great way to boost the hard designing or prototyping process.</p>
+              </div>
+              <hr/>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h2 class="regular-label">$312</h2>
+                </div>
+                <div class="col-lg-8">
+                  <p>Per month billed annualy or $250 from month to month</p>
+                </div>
+              </div>
+              <button class="btn btn-success" href="#">Buy It</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="join-us">
+      <div class="join-us-container">
+        <h2>Become One of Us</h2>
+        <p>Module 01 is big, stylish and handy UI Kit, full of many useful elements</p>
+        <div class="input-group">
+          <input type="text" class="form-control sub" placeholder="&#xf1d8; Email Address" aria-describedby="basic-addon1">
+          <button class="btn btn-success" href="#" id="basic-addon1">Lets Chat</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="col-lg-1 col-xs-12">
+            <img style="float:left;" src="images/cube.svg"/>
+          </div>
+          <div class="col-lg-offset-1 col-lg-8 col-xs-12 links">
+            <a href="#">Apps</a>
+            <a href="#">Gadgets</a>
+            <a href="#">Science</a>
+            <a href="#">Nature</a>
+            <a href="#">Creative</a> 
+          </div>
+          <div class="col-lg-2 col-xs-12">
+            <p>© 2016 Great Simple</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.5.1/nouislider.js"></script>
+    <script src="js/RangeSlider-all.min.js"></script>
+    <script src="js/RangeSlider-core.js"></script>
+  </body>
+</html>
