@@ -1,11 +1,16 @@
 $(function(){
-	$.ajax({
-		url: '../chart.json',
-		dataType: "json",
-		success: function(data){
-			console.log(data);
-		}
-	});
+	$('.btn-default').click(function(e){
+		console.log('clicked');
+		$.getJSON("chart.json", function(data){
+		  var items = [];
+		  $.each( data, function( key, val ) {
+		    items.push(key + ": " + val);
+		  });
+		 
+		  console.log(items);
+		});
+	})
+	
 	
 	// line chart data
 	var iniData = {
