@@ -175,19 +175,25 @@ body {
 	.input-group {
 		display:inline-flex;
 	}
+	.footer {
+		display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+	}
 
 	.footer-container {
-		padding:25px;
+		margin: 40px 25em;
 	}
 	.footer img {
 		opacity: 0.4;
 	}
-	.outer-container {
-		margin: 0 9em;
-	}
-
-	.inner-container {
-		margin-left: 15em;
+	
+	.links a {
+		margin:0 1.5em;
+		text-decoration: none;
+		color:white;
 	}
 
 	.inner-container a {
