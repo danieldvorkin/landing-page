@@ -1,4 +1,4 @@
-body { overflow-x:hidden; }
+body { overflow-x:hidden; font-family:'Roboto', sans-serif;; }
 .range-slider { max-width:500px; }
 .testimonial h3 { font-weight:200; }
 .flickity-page-dots { display:none; }
@@ -322,8 +322,7 @@ body { overflow-x:hidden; }
 		text-decoration: none;
 		color:white;
 	}
-
-	.inner-container a {
-		margin-right:25px;
+	.footer .col-lg-8, .footer .col-lg-2 {
+		margin-top:10px;
 	}
 }
