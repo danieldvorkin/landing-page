@@ -1,6 +1,5 @@
 $(function(){
-	var months = [];
-	var money = [];
+	var months = [], money = [];
 
 	$.ajax({
 		async: false,
@@ -22,24 +21,21 @@ $(function(){
 			pointStrokeColor:"#fff",
 			pointHighlightFill: "#fff",
 			pointHighlightStroke: "#C45662",
-			data: money,
-		}]
+			data: money
+		}],
 	};
 	
-	options = {
+	var options = {
 		scaleBeginAtZero: true,
-		/*This is how to customize how the labels look :) */
-		tooltipTemplate: "<%if (label){%><%=label%>: <%}%>$<%= value %>"
+		tooltipTemplate: "Total Earned: $<%= value %>",
 	};
 	
-	ini = document.getElementById('ini').getContext('2d')
-
 	rs = new RangeSliderChart({
 		chartData: iniData,
 		chartOpts: options,
 		chartType: 'Line',
-		chartCTX: ini,
+		chartCTX: document.getElementById('ini').getContext('2d'),
 		class: 'my-chart-ranger',
-		initial: [3, 10]
+		initial: [0, 12]
 	})
 });
