@@ -162,7 +162,14 @@ body { overflow-x:hidden; font-family:'Roboto', sans-serif;; }
 	.footer img { float:none !important; }
 }
 
-@media (min-width:700px) { 
+/*@media (min-width:1025px) {
+	#ini, .range-slider { max-width:100%; height:225px; }
+	.action-container {
+		margin:0 5em;
+	}
+}*/
+
+@media (min-width:1281px) { 
 	.container-fluid {
 		margin: 0 2em;
 	}
