@@ -1,22 +1,20 @@
-function getData(){
-	var months = [];
-	
-	$.getJSON("http://" + window.location.host + "/js/chart.json", function(data){
-		$.each(data.numbers, function(i) {
-			months.push(data.numbers[i]['month']);
-		});
-  });
-  
-  return months;
-}
-
-
 $(function(){
-	var arr = getData();
-	console.log(arr);
+	var months = [];
+	var money = [];
+
+	$.ajax({
+		async: false,
+		url: "http://" + window.location.host + "/js/chart.json",
+		success: function(data){
+			$.each(data.numbers, function(i) {
+				months.push(data.numbers[i].month);
+				money.push(data.numbers[i].money);
+			});
+		}
+	});
 	
 	var iniData = {
-		labels: arr,
+		labels: months,
 		datasets:[{
 			fillColor:"rgba(172,194,132,0)",
 			strokeColor:"#C45662",
@@ -24,10 +22,7 @@ $(function(){
 			pointStrokeColor:"#fff",
 			pointHighlightFill: "#fff",
 			pointHighlightStroke: "#C45662",
-			
-			data:[
-				
-			],
+			data: money,
 		}]
 	};
 	
