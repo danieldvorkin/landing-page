@@ -169,7 +169,7 @@ body { overflow-x:hidden; font-family:'Roboto', sans-serif;; }
 	}
 }*/
 
-@media (min-width:1281px) { 
+@media (min-width:760px) { 
 	.container-fluid {
 		margin: 0 2em;
 	}
@@ -225,7 +225,7 @@ body { overflow-x:hidden; font-family:'Roboto', sans-serif;; }
 	}
 
 	.carousel-container {
-		margin:0 15em;
+		margin:0 7em;
 	}
 
 	.carousel-cell {
