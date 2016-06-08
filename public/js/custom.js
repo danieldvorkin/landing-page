@@ -25,12 +25,14 @@ $(function(){
 			pointHighlightFill: "whitesmoke",
 			pointHighlightStroke: "white",
 			data: money
-		}],
+		}]
 	};
 	
 	var options = {
 		scaleBeginAtZero: true,
 		tooltipTemplate: "$<%= value %>\nEarned for <%= label %>",
+		tooltipFillColor: '#838CC7',
+		tooltipFontColor: 'whitesmoke'
 	};
 	
 	rs = new RangeSliderChart({
