@@ -18,8 +18,8 @@ $(function(){
 	var iniData = {
 		labels: months,
 		datasets:[{
-			fillColor:"whitesmoke",
-			strokeColor:"grey",
+			fillColor:"#F4F4F4",
+			strokeColor:"#F4F4F4",
 			pointColor:"silver",
 			pointStrokeColor:"white",
 			pointHighlightFill: "whitesmoke",
@@ -53,4 +53,6 @@ $(function(){
 	});
 
 	$('.range-slider').css('margin-top', '18px');
+	$('.range-slider').css('margin-right', 'auto');
+	$('.range-slider').css('margin-left', 'auto');
 });

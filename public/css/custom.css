@@ -97,6 +97,10 @@ body { overflow-x:hidden; font-family:'Roboto', sans-serif;; }
   font-size: 11px;
 }
 
+.carousel {
+	background: #FFFFFF;
+}
+
 @media (max-width:400px) {
 	#ini, .range-slider { max-width:100%; height:225px; }
 	.navbar-collapse { text-align:center; }
@@ -191,7 +195,7 @@ body { overflow-x:hidden; font-family:'Roboto', sans-serif;; }
 
 	.action {
 		padding-bottom:20px;
-		background:whitesmoke;
+		background:#F4F4F4;
 	}
 	.action-container {
 		margin:0 10em;
@@ -213,7 +217,6 @@ body { overflow-x:hidden; font-family:'Roboto', sans-serif;; }
 
 	.range-slider {
 		margin:0 35%;
-		/*width:auto !important;*/
 	}
 
 	.text-body {
@@ -244,10 +247,11 @@ body { overflow-x:hidden; font-family:'Roboto', sans-serif;; }
 		margin-top:30px;
 		margin-bottom: 30px;
     height: 170px;
+    background: #FFFFFF;
 	}
 
 	.license {
-		background:whitesmoke;
+		background:#F4F4F4;
 		padding-top:50px;
 		padding-bottom:50px;
 	}
