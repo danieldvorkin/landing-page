@@ -54,7 +54,11 @@ $(function(){
     }
 	});
 
+	// This needs to happen after all the elements have been placed on the DOM
+	// I need to manually adjust the background after all elements have loaded including the graph
+
 	$('.range-slider').css('margin-top', '18px');
 	$('.range-slider').css('margin-right', 'auto');
 	$('.range-slider').css('margin-left', 'auto');
+	$('.noUi-connect').css('background', 'silver');
 });
