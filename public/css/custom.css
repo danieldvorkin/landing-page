@@ -75,10 +75,6 @@ body { overflow-x:hidden; font-family:'Roboto', sans-serif;; }
 	border-top: 3px solid #79A70A;
 }
 
-.range-slider {
-  height: 10px;
-}
-
 .noUi-horizontal .noUi-handle {
   width: 34px;
   height: 28px;

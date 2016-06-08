@@ -30,7 +30,7 @@ $(function(){
 	
 	var options = {
 		scaleBeginAtZero: true,
-		tooltipTemplate: "<%= label %>'s Earnings: $<%= value %>",
+		tooltipTemplate: "$<%= value %>\nEarned for <%= label %>",
 	};
 	
 	rs = new RangeSliderChart({
@@ -43,10 +43,12 @@ $(function(){
 	})
 
 	$('.sub').on('keyup', function() {
-    if($(this).val().length === 0) {
+    if($(this).val().length === 0	) {
       $('.glyphicon-send').show();
     } else {
       $('.glyphicon-send').hide();
     }
-});
+	});
+
+	$('.range-slider').css('margin-top', '18px');
 });
