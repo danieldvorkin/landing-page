@@ -1,5 +1,5 @@
 $(function(){
-	var months = [], money = [];
+	var months = [], money = [], views = [], likes = [], shares = [];
 
 	$.ajax({
 		async: false,
@@ -8,6 +8,9 @@ $(function(){
 			$.each(data.numbers, function(i) {
 				months.push(data.numbers[i].month);
 				money.push(data.numbers[i].money);
+				views.push(data.numbers[i].views);
+				likes.push(data.numbers[i].like);
+				shares.push(data.numbers[i].share);
 			});
 		}
 	});
@@ -27,7 +30,7 @@ $(function(){
 	
 	var options = {
 		scaleBeginAtZero: true,
-		tooltipTemplate: "Total Earned: $<%= value %>",
+		tooltipTemplate: "<%= label %>'s Earnings: $<%= value %>",
 	};
 	
 	rs = new RangeSliderChart({
