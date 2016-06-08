@@ -6,7 +6,9 @@ $(function(){
 		url: "http://" + window.location.host + "/js/chart.json",
 		success: function(data){
 			$.each(data.numbers, function(i) {
-				months.push(data.numbers[i].month);
+				var month = data.numbers[i].month.toString();
+
+				months.push(month.substring(0,3));
 				money.push(data.numbers[i].money);
 				views.push(data.numbers[i].views);
 				likes.push(data.numbers[i].like);
