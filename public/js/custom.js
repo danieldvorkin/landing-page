@@ -15,12 +15,12 @@ $(function(){
 	var iniData = {
 		labels: months,
 		datasets:[{
-			fillColor:"rgba(172,194,132,0)",
-			strokeColor:"#C45662",
-			pointColor:"#C45662",
-			pointStrokeColor:"#fff",
-			pointHighlightFill: "#fff",
-			pointHighlightStroke: "#C45662",
+			fillColor:"whitesmoke",
+			strokeColor:"grey",
+			pointColor:"silver",
+			pointStrokeColor:"white",
+			pointHighlightFill: "whitesmoke",
+			pointHighlightStroke: "white",
 			data: money
 		}],
 	};
