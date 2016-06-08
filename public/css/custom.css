@@ -91,6 +91,16 @@ body { overflow-x:hidden; font-family:'Roboto', sans-serif;; }
 	height:400px !important;
 }
 
+.glyphicon-send {
+  float: right;
+  margin-right: -12px;
+  margin-top: 11px;
+  position: relative;
+  z-index: 1000;
+  color: #8A8989;
+  font-size: 11px;
+}
+
 @media (max-width:400px) {
 	#ini, .range-slider { max-width:100%; height:225px; }
 	.navbar-collapse { text-align:center; }

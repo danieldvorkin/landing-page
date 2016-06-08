@@ -41,4 +41,12 @@ $(function(){
 		class: 'my-chart-ranger',
 		initial: [0, 12]
 	})
+
+	$('.sub').on('keyup', function() {
+    if($(this).val().length === 0) {
+      $('.glyphicon-send').show();
+    } else {
+      $('.glyphicon-send').hide();
+    }
+});
 });
